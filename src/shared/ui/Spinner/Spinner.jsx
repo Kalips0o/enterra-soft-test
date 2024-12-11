@@ -1,5 +1,8 @@
-import { ReactComponent as SpinnerSVG } from './Spinner.svg';
+import SpinnerSvg from './Spinner.svg';
+import styles from './Spinner.module.less';
 
-const Spinner = () => <SpinnerSVG />;
+const Spinner = () => (
+  <img src={SpinnerSvg} alt="Loading spinner" className={styles.spinner} />
+);
 
 export default Spinner;

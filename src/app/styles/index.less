@@ -1,3 +1,4 @@
+@import url("global.less");
 @import url("reset.less");
 @import url("variables.less");
 
@@ -10,7 +11,7 @@ body {
 }
 
 .app {
-  background-color: #6b6969;
+  background-color: #211f2d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,6 +29,15 @@ body {
   @media (min-width: @desktop-width) {
     padding: 0;
     width: 1024px
+  }
+
+  .error {
+    color: #ff4d4d;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(255, 77, 77, 0.1);
+    border-radius: 4px;
+    margin-top: 16px;
   }
 }
 

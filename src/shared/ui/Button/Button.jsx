@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './Button.module.less';
 
 const Button = (props) => {
@@ -8,10 +9,11 @@ const Button = (props) => {
   } = props;
   return (
     <button
+      type="button"
       className={`${styles.button} ${isCanceled ? styles.canceled : ''} ${className}`}
       {...otherProps}
     >
-      {isCanceled ? 'Canceled' : 'Join table'}
+      {isCanceled ? 'Canceled' : 'Join table' }
     </button>
   );
 };
