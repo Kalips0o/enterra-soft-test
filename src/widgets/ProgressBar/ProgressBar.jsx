@@ -1,10 +1,7 @@
-const ProgressBar = () => {
-
-  return (
-    <div>
-      ProgressBar
-    </div>
-  );
-};
+const ProgressBar = () => (
+  <div>
+    ProgressBar
+  </div>
+);
 
 export default ProgressBar;

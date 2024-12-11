@@ -1,18 +1,17 @@
-import React from 'react';
-import styles from './Button.module.less'
+import styles from './Button.module.less';
 
 const Button = (props) => {
   const {
     isCanceled,
     className,
     ...otherProps
-  } = props
+  } = props;
   return (
     <button
       className={`${styles.button} ${isCanceled ? styles.canceled : ''} ${className}`}
       {...otherProps}
     >
-      {isCanceled ? 'Canceled' : 'Join table' }
+      {isCanceled ? 'Canceled' : 'Join table'}
     </button>
   );
 };

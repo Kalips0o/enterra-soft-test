@@ -1,8 +1,5 @@
-const TournamentItem = (props) => {
-
-  return (
-     <h1>TournamentItem</h1>
-  );
-};
+const TournamentItem = () => (
+  <h1>TournamentItem</h1>
+);
 
 export default TournamentItem;
