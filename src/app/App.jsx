@@ -24,7 +24,7 @@ function App() {
           console.error('Ошибка:', error);
           setIsLoading(false);
         });
-    }, 2500);
+    }, 2000);
 
     return () => clearTimeout(timerRef.current);
   }, []);
